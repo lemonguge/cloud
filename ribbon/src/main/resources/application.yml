@@ -1,0 +1,13 @@
+# 服务提供者的名字
+spring:
+ application:
+  name: ribbon-consumer
+
+# 服务提供者的端口号
+server:
+ port: 9000
+
+eureka:
+ client:
+  # 注册服务器的地址：服务提供者和服务消费者都要依赖这个地址
+  service-url.defaultZone: http://localhost:8761/eureka
